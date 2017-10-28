@@ -174,7 +174,8 @@ public class Main {
       case 4: SetGames.sortByVote(); break;
     }
     SetGames.sortAs(sortas);
-    Menu.Notification.Success("Sorted");
+    if (SetGames.size != 0)
+      Menu.Notification.Success("Sorted");
     displayList();
   }
 
